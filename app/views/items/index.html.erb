@@ -1,0 +1,71 @@
+<%= render "shared/header" %>
+<div class='main'>
+<main class="contents-products">
+  <div class="contents-sub">
+    <nav class="nav-local">
+      <div class="nav-local-in">
+        <p class="ttl-nav only-pc">商品タイプから探す</p>
+        <ul class="list-nav-main">
+          <li>新着アイテム</li>
+          <li>ランキング</li>
+        </ul>
+        <p class="ttl-nav only-pc">カテゴリーから探す</p>
+        <ul class="list-nav-main">
+          <li>トップス</li>
+          <li>アウター</li>
+          <li>ワンピース</li>
+          <li>ボトムス</li>
+          <li>シューズ</li>
+          <li>バッグ</li>
+          <li>アクセサリー</li>
+          <li>セットアイテム</li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="sec-cmn-02">
+    <h2 class="ttl-cmn-02">
+      <span class="txt-en">NEW ITEM</span>
+    <h2>
+    <ul class="list-products-01">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="ta-center mt-20">
+      <a class="btn-cmn-01" href="#">新着アイテム一覧を見る</a>
+    </div>
+  </div>
+  <div class="sec-cmn-02">
+    <h2 class="ttl-cmn-02 mb-5">
+      <span class="txt-en">RANKING</span>
+    <h2>
+    <ul class="list-products-01">
+      <li>
+        <div class="card-product-01">
+          <p class="txt-ranking">No.1</p>
+          <a class="box-link" >
+            <%= link_to image_tag(""), "#" %>
+          </a>
+      </li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="ta-center mt-20">
+      <a class="btn-cmn-01" href="#">ランキング一覧を見る</a>
+    </div>
+  </div>
+
+<%= render "shared/footer" %>

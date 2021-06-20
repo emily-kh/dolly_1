@@ -1,0 +1,27 @@
+<%# CSS・・・assets/stylesheets/shared/header.css %>
+<header class='top-page-header'>
+  <div class = "header-in">
+    <%= link_to image_tag("header_dolly.png", class:"header-logo"), "/" %>
+    <div class="header-search">
+      <div class="header-search-in">
+        <div class="mod-cmn-search">
+          <div class="box-search">
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div class="header-utilities">
+      <ul class="list-nav">
+        <li>
+          <a><%= link_to image_tag("person_icon.png", class:"btn-icon icon-mypage"), "#" %></a>
+        </li>
+        <li>
+          <a><%= link_to image_tag("mark_heart.png", class:"btn-icon icon-fav"), "#" %></a>
+        </li>
+        <li>
+          <a><%= link_to image_tag("cart_icon.png", class:"btn-icon icon-cart"), "#" %></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
