@@ -1,112 +1,62 @@
+.main {
+  background: #f8f8f8;
+  font-family: "Roboto", "游ゴシック体", "Yu Gothic", "游ゴシックMedium", "Yu Gothic Medium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Hiragino Sans", "メイリオ", "Meiryo", sans-serif;
+  display: flex;
+  
+}
+
 /*==================================================
 スライダーのためのcss
 ===================================*/
+
 .slider {
-  position:relative;
-  z-index: 1;
-  height: 100vh;
-}
-/*　背景画像設定　*/
-
-.slider-item {
-  width: 100%;/*各スライダー全体の横幅を画面の高さいっぱい（100%）にする*/
-  height:100vh;/*各スライダー全体の縦幅を画面の高さいっぱい（100vh）にする*/
-  background-repeat: no-repeat;/*背景画像をリピートしない*/
-  background-position: center;/*背景画像の位置を中央に*/
-  background-size: cover;/*背景画像が.slider-item全体を覆い表示*/
+  width: 600px;
+  height: 400px;
+  border-radius: 10px;
+  align-items: center;
+  margin-top: 120px;
+  display: flex;
 }
 
-/*矢印の設定*/
 
-/*戻る、次へ矢印の位置*/
-.slick-prev, 
-.slick-next {
-  position: absolute;/*絶対配置にする*/
-  z-index: 3;
-  top: 42%;
-  cursor: pointer;/*マウスカーソルを指マークに*/
-  outline: none;/*クリックをしたら出てくる枠線を消す*/
-  border-top: 2px solid #ccc;/*矢印の色*/
-  border-right: 2px solid #ccc;/*矢印の色*/
-  height: 25px;
-  width: 25px;
+.sliders {
+  width: 600px;
+  height: 400px;
+  border-radius: 10px;
+  align-items: center;
+  margin-top: 120px;
+  display: flex;
 }
 
-.slick-prev {/*戻る矢印の位置と形状*/
-  left:2.5%;
-  transform: rotate(-135deg);
+.slides input {
+  display: none;
 }
 
-.slick-next {/*次へ矢印の位置と形状*/
-  right:2.5%;
-  transform: rotate(45deg);
+.slide {
+  width: 800px;
+  transition: 2s;
+  height: 500px;
 }
 
-/*ドットナビゲーションの設定*/
-
-.slick-dots {
-  position: relative;
-  z-index: 3;
-  text-align:center;
-  margin:-50px 0 0 0;
+.navigation-manual {
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
 }
 
-.slick-dots li {
-  display:inline-block;
-  margin:0 5px;
+.manual-btn {
+  border: 2px solid #f8f8f8;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
 }
 
-.slick-dots button {
-  color: transparent;
-  outline: none;
-  width:8px;/*ドットボタンのサイズ*/
-  height:8px;/*ドットボタンのサイズ*/
-  display:block;
-  border-radius:50%;
-  background:#ccc;/*ドットボタンの色*/
-}
-
-.slick-dots .slick-active button{
-  background:#333;/*ドットボタンの現在地表示の色*/
-}
 
 /*========= レイアウトのためのCSS ===============*/
-ul{
-  margin: 50px;
-  padding: 0px;
-  list-style: none;
-}
 
-a:hover,
-a:active{
-  text-decoration: none;
-}
-
-h1{
-  position: absolute;
-  z-index: 2;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  font-size:6vw;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-}
-
-.wrapper{
-position: relative;
-}
-
-.container{
-background:#555;
-}
-
-.container p{
-padding: 300px 0; 
-text-align: center;
-color: #fff;
-}
 /*==================================================
 スライダーのためのcss
 ===================================*/
@@ -117,15 +67,12 @@ a {
   text-decoration: none;
 }
 
-.main {
-  background: #f8f8f8;
-  font-family: "Roboto", "游ゴシック体", "Yu Gothic", "游ゴシックMedium", "Yu Gothic Medium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Hiragino Sans", "メイリオ", "Meiryo", sans-serif;
-}
-
 .contents-products {
   width: 1000px;
   margin-top: 18vh;
   padding-bottom: 60px;
+  background: #f8f8f8;
+  font-family: "Roboto", "游ゴシック体", "Yu Gothic", "游ゴシックMedium", "Yu Gothic Medium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Hiragino Sans", "メイリオ", "Meiryo", sans-serif;
 
 }
 
