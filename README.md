@@ -5,8 +5,11 @@
 - 女性のファッションサイト。お買い物が失敗しないように、欲しい商品が探しやすくサイズや生地の表記が詳しく書いてある。
 
 ## URL
-
+https://dolly-1.herokuapp.com/
 ## テスト用アカウント
+### Basic認証
+- ユーザー名：admin
+- パスワード：2222
 
 ## 利用方法
 - 買いたい商品をカテゴリー欄から探して商品を購入したり、検索機能を使ってピンポイントで商品を検索して商品を購入する。
@@ -149,3 +152,18 @@
 [![Image from Gyazo](https://i.gyazo.com/ef106ddf8389ba0af78a71d6515777c2.jpg)](https://gyazo.com/ef106ddf8389ba0af78a71d6515777c2)
 
 ## ローカルでの動作方法
+
+
+## 使用技術
+### バックエンド
+Ruby,Ruby on Rails
+### フロントエンド
+HTML/CSS,JavaScript
+### データベース
+MySQL,SequelPro
+### ソース管理
+GitHb,GitHubDesktop
+### テスト
+RSpec
+### エディタ
+VSCode
