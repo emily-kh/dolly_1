@@ -1,9 +1,9 @@
 .main {
-  background: #f8f8f8;
+  background: #fce5cd5d;
   font-family: "Roboto", "游ゴシック体", "Yu Gothic", "游ゴシックMedium", "Yu Gothic Medium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Hiragino Sans", "メイリオ", "Meiryo", sans-serif;
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 85vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,11 +14,10 @@
 ===================================*/
 
 .slider {
-  width: 600px;
-  height: 400px;
+  width: 700px;
+  height: 500px;
   border-radius: 10px;
   overflow: hidden;
-
 }
 
 
@@ -33,19 +32,19 @@
 }
 
 .slide {
-  width: 20%;
+  width: 50%;
   transition: 2s;
 }
 
 .slide img {
-  width: 600px;
-  height: 400px;
+  width: 700px;
+  height: 500px;
 }
 
 .navigation-manual {
   position: absolute;
-  width: 600px;
-  margin-top: -40px;
+  width: 700px;
+  margin-top: -30px;
   display: flex;
   justify-content: center;
 }
@@ -77,10 +76,10 @@ a {
 .contents-products {
   margin: 0;
   padding: 0;
-  height: 100vh;
+  height: 200vh;
   // width: 1000px;
   padding-bottom: 60px;
-  background: #f8f8f8;
+  background: #fce5cd5d;
   font-family: "Roboto", "游ゴシック体", "Yu Gothic", "游ゴシックMedium", "Yu Gothic Medium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Hiragino Sans", "メイリオ", "Meiryo", sans-serif;
 
 }
@@ -97,7 +96,7 @@ article, aside, figure, figcaption, footer, header, section, main {
   float: left;
   width: 250px;
   margin-left: 30px;
-  margin-top: 30px;
+  margin-top: -400px;
 }
 
 .nav-local .ttl-nav {
@@ -156,13 +155,14 @@ a {
 }
 
 .sec-cmn-02 {
-  margin-bottom: 50px;
-  margin-right: 260px;
+  margin-bottom: 30px;
+  margin-right: 240px;
+  margin-left: 280px;
 }
 
 .ttl-cmn-02 {
-  margin-bottom: 25px;
-  line-height: 1.4;
+  margin-bottom: 15px;
+  line-height: 1;
   text-align: center;
 }
 
@@ -208,13 +208,15 @@ li {
   overflow: hidden;
   position: relative;
   margin-bottom: 5px;
+  width: 120px;
+  height: 160px;
 }
 
 figure {
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 40px;
-  margin-inline-end: 40px;
+  margin-block-start: 3em;
+  margin-block-end: 3em;
+  margin-inline-start: 30px;
+  margin-inline-end: 30px;
 }
 
 .box-image img {

@@ -1,0 +1,19 @@
+<main class="contents-normal">
+  <div class="contents-mypage">
+    <div class="contents-sub">
+      <nav class="nav-local nav-local-mypage">
+        <div class="nav-local-in">
+          <p class="ttl-nav only-pc">マイページメニュー</p>
+          <ul>
+            <li>登録内容の確認・変更</li>
+            <li>配送先の登録・変更</li>
+            <li>お気に入り商品</li>
+            <li>ご注文履歴</li>
+            <li>退会</li>
+          </ul>
+          <a><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></a>
+        </div>
+      </nav>
+    </div>
+  </div>
+</main>
