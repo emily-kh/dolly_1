@@ -21,19 +21,27 @@ https://dolly-1.herokuapp.com/
 ## 洗い出した要件	
 - マイページ	:登録内容を変更できるようにするため・注文履歴を知ることができるようにする
 - 購入機能	:お客様が書いたい商品を購入することができるようにするため
-- 検索機能	:検索機能を使ってピンポイントで商品を見つけることができるようにするため
 - タブメニュー機能	:タブをつけることで様々なカテゴリーを絞って商品をみることができるため
 - スライドショー機能	:スライドショーがあることで画面に動きがあり、見栄えがいいため
-- お気に入り商品一覧 :買いたい商品を今すぐに買うのではなく、いいねを押して他の商品と見比べるためにお気に入りボタンが必要
-- カテゴリー別商品一覧	:どんな商品があるのかを一覧で全体の商品を見るため
 - 商品詳細ページ	:洋服のサイズやカラー展開はどんな感じなのか知るため
 
 ## 実装した機能についての画像やGIFおよびその説明
+### トップページ
+<a href="https://gyazo.com/c7d3a02a8db2b7efb06f797c9922bc4f"><video alt="Video from Gyazo" width="1000" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/c7d3a02a8db2b7efb06f797c9922bc4f.mp4" type="video/mp4" /></video></a>
+
+### ログイン画面(ログイン・新規登録)
+[![Image from Gyazo](https://i.gyazo.com/4cc11e7efae40e54e40ab486f3af974b.png)](https://gyazo.com/4cc11e7efae40e54e40ab486f3af974b)
+
+### 新規登録画面
+<a href="https://gyazo.com/eabc815b9fcee53e63b9cad65cf17438"><video alt="Video from Gyazo" width="1000" autoplay muted loop playsinline controls><source src="https://i.gyazo.com/eabc815b9fcee53e63b9cad65cf17438.mp4" type="video/mp4" /></video></a>
 
 ## 実装予定の機能
 - 購入履歴機能	:今までどんな商品を購入したのか確認するためだけでなく、どれぐらい月にお洋服にお金を使ったのか目で確かめることができる
 - 全体のランキング機能	:今どんな商品が人気なのか、どんな洋服が今の流行りなのかランキングをみることで知ることができる
 - アイテム別ランキング	:全体のランキングだけでなくカテゴリー別のランキングも参考にし、買いたい商品を絞っていけるようにするため
+- 検索機能	:検索機能を使ってピンポイントで商品を見つけることができるようにするため
+- お気に入り商品一覧 :買いたい商品を今すぐに買うのではなく、いいねを押して他の商品と見比べるためにお気に入りボタンが必要
+- カテゴリー別商品一覧	:どんな商品があるのかを一覧で全体の商品を見るため
 
 ## データベース設計
 
@@ -151,7 +159,6 @@ https://dolly-1.herokuapp.com/
 ## ER図
 [![Image from Gyazo](https://i.gyazo.com/ef106ddf8389ba0af78a71d6515777c2.jpg)](https://gyazo.com/ef106ddf8389ba0af78a71d6515777c2)
 
-## ローカルでの動作方法
 
 
 ## 使用技術
