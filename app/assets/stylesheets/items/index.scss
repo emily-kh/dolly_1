@@ -8,7 +8,6 @@
   justify-content: center;
   align-items: center;
 }
-
 /*==================================================
 スライダーのためのcss
 ===================================*/
@@ -99,6 +98,9 @@ article, aside, figure, figcaption, footer, header, section, main {
   margin-top: -400px;
 }
 
+/*==================================================
+タブメニューのためのcss
+===================================*/
 .nav-local .ttl-nav {
   padding: 13px 0px;
   border-top: 1px solid transparent;
@@ -106,7 +108,7 @@ article, aside, figure, figcaption, footer, header, section, main {
   font-size: 1rem;
   font-weight: bold;
   line-height: 1.4;
-  margin-top: 70px;
+  margin-top: 400px;
   margin-left: 60px;
   color: #f7c49e;
 }
@@ -129,6 +131,9 @@ ul {
   padding-inline-start: 40px;
   list-style: none;
 }
+.nav-local .list-nav-main {
+  height: 2rem;
+}
 
 .nav-local .list-nav-main > li {
   position: relative;
@@ -136,7 +141,7 @@ ul {
   margin: 13px 40px;
 }
 
-li {
+.nav-local .list-nav-main li {
   display: list-item;
   text-align: -webkit-match-parent;
 }
@@ -154,6 +159,76 @@ a {
   color: #3B3B3B;
 }
 
+.list-nav-main li li {
+  height: 0;
+  overflow: hidden;
+  transition: .5s;
+  width: 180px;
+
+}
+
+.list-nav-main li li a {
+  border-top: 1px solid #eee;
+}
+
+.list-nav-main li:hover > ul > li {
+  height: 2rem;
+  overflow: visible;
+
+}
+
+// .list-nav-main > li > ul:before{
+//   /*リストに「▶︎」を付ける*/
+// .gnav > li > ul:before{/*子階層*/
+//   border: 5px solid transparent;
+//   border-top: 5px solid #fff;
+//   content: "";
+//   right: 1rem;
+//   position: absolute;
+//   top: 1rem;
+//   transform: translateY(-40%);
+// }
+// }
+// .list-nav-main li ul li ul:before {/*孫階層*/
+//   border: 5px solid transparent;
+//   border-left: 5px solid #fff;
+//   content: "";
+//   left: -20px;
+//   position: absolute;
+//   top: 1em;
+//   transform: translateY(-50%);
+// }
+// .list-nav-main li:nth-child(5) ul li ul:before {/*一番右のメニューの孫階層*/
+//   border: 5px solid transparent;
+//   border-top: 5px solid #fff;
+//   content: "";
+//   right: 1rem;
+//   position: absolute;
+//   top: 1rem;
+//   transform: translateY(-40%);
+// }
+
+// .list-nav-main.list-nav-main li ul li ul:before {
+//   border: 5px solid transparent;
+//   border-left: 5px solid #fff;
+//   content: "";
+//   left: -20px;
+//   position: absolute;
+//   top: 1em;
+//   transform: translateY(-50%);
+// }
+
+// .list-nav-main li:nth-child(5) ul li ul:before {
+//   border: 5px solid transparent;
+//   border-right: 5px solid #fff;
+//   left: auto;
+//   right: -20px;
+// }
+
+
+/*==================================================
+タブメニューのためのcss
+===================================*/
 .sec-cmn-02 {
   margin-bottom: 30px;
   margin-right: 240px;
