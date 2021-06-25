@@ -1,0 +1,58 @@
+.contents-normal {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 0 60px;
+  text-align: left;
+}
+
+.contents-mypage .contents-sub {
+  float: left;
+  width: 280px;
+}
+
+.nav-local .ttl-nav {
+  padding: 13px 0 12px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid #3b3b3b;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+ul {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+  cursor: pointer;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.nav-local .list-nav-main .btn-nav-main {
+  position: relative;
+  display: block;
+  padding: 7px 0;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  text-decoration: none;
+}
+
+a {
+  color: #3B3B3B;
+  padding-left: 10px;
+}
+
+.nav-local .list-nav-main .btn-nav-main span {
+  display: block;
+  padding: 6px 25px 6px 20px;
+}
