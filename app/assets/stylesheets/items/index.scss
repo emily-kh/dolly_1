@@ -1,7 +1,7 @@
 .main {
   background: #fce5cd5d;
   font-family: "Roboto", "游ゴシック体", "Yu Gothic", "游ゴシックMedium", "Yu Gothic Medium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Hiragino Sans", "メイリオ", "Meiryo", sans-serif;
-  margin: 0;
+  margin-top: 40px;
   padding: 0;
   height: 85vh;
   display: flex;
@@ -13,44 +13,44 @@
 スライダーのためのcss
 ===================================*/
 
-.slider {
-  width: 700px;
+.slider{
+  width: 800px;
   height: 500px;
   border-radius: 10px;
   overflow: hidden;
 }
 
 
-.sliders {
+.sliders{
   width: 500%;
   height: 500px;
   display: flex;
 }
 
-.slides input {
+.slides input{
   display: none;
 }
 
-.slide {
+.slide{
   width: 50%;
   transition: 2s;
 }
 
 .slide img {
-  width: 700px;
+  width: 800px;
   height: 500px;
 }
 
-.navigation-manual {
+.navigation-manual{
   position: absolute;
-  width: 700px;
-  margin-top: -30px;
+  width: 800px;
+  margin-top: 10px;
   display: flex;
   justify-content: center;
 }
 
-.manual-btn {
-  border: 2px solid white;
+.manual-btn{
+  border: 2px solid gray;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -58,10 +58,48 @@
   
 }
 
-.manual-btn:not(:last-child) {
+.manual-btn:not(:last-child){
   margin-right: 40px;
 }
 
+.manual-btn:hover{
+  background: gray;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 510px;
+}
+
+.navigation-auto div{
+  border: 2px solid gray;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
 
 /*==================================================
 スライダーのためのcss
