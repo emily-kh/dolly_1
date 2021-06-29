@@ -7,13 +7,24 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+
+    <script>
+     $(function(){
+          $('.js-menu__item__link').each(function(){
+              $(this).on('click',function(){
+                  $(this).toggleClass('on');
+                  $("+.submenu",this).slideToggle()
+                  return false;
+              });
+          });
+      });
+    </script>
 </body>
   </head>
   <body>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://coco-factory.jp/ugokuweb/wp-content/themes/ugokuweb/data/6-1-1/javascript/slick.js"></script>
-    <script src="javascript/slick.js"></script>
     <%= yield %>
   </body>
 </html>

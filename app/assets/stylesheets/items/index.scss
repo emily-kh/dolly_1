@@ -1,6 +1,6 @@
 .main {
   background: #fce5cd5d;
-  font-family: "Roboto", "游ゴシック体", "Yu Gothic", "游ゴシックMedium", "Yu Gothic Medium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Hiragino Sans", "メイリオ", "Meiryo", sans-serif;
+  font-family: 'Vollkorn', serif;
   margin-top: 40px;
   padding: 0;
   height: 85vh;
@@ -117,7 +117,7 @@ a {
   // width: 1000px;
   padding-bottom: 60px;
   background: #fce5cd5d;
-  font-family: "Roboto", "游ゴシック体", "Yu Gothic", "游ゴシックMedium", "Yu Gothic Medium", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "Hiragino Sans", "メイリオ", "Meiryo", sans-serif;
+  font-family: 'Vollkorn', serif;
 
 }
 
@@ -146,7 +146,7 @@ article, aside, figure, figcaption, footer, header, section, main {
   font-size: 1rem;
   font-weight: bold;
   line-height: 1.4;
-  margin-top: 400px;
+  margin-top: 80px;
   margin-left: 60px;
   color: #f7c49e;
 }
@@ -159,109 +159,43 @@ p {
   margin-inline-end: 0px;
 }
 
-ul {
+.list-nav-main {
+  color: #fff;
+  cursor: pointer;
   display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
-  list-style: none;
+  margin-bottom: 1px;
 }
-.nav-local .list-nav-main {
-  height: 2rem;
-}
-
-.nav-local .list-nav-main > li {
-  position: relative;
-  border-bottom: 1px solid #A2A2A2;
-  margin: 13px 40px;
-}
-
-.nav-local .list-nav-main li {
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
-
-.nav-local .list-nav-main .btn-nav-main {
-  position: relative;
+.menu__item__link {
+  color: black;
   display: block;
-  padding: 7px 0;
-  font-size: 1.4rem;
-  line-height: 1.4;
-  text-decoration: none;
+  line-height: 30px;
+  padding: 10px;
+  position: relative;
+}
+.menu__item__link:after {
+  content: '\f067';
+  display: block;
+  font-family: "Font Awesome 5 Free";
+  line-height: 30px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 60px;
+}
+.menu__item__link.on:after {
+  content: '\f068';
+}
+ 
+.submenu {
+  display: none;
+}
+.submenu__item {
+  border-bottom: 1px solid black;
+  color: #222;
+  padding: 20px;
 }
 
-a {
-  color: #3B3B3B;
-}
-
-.list-nav-main li li {
-  height: 0;
-  overflow: hidden;
-  transition: .5s;
-  width: 180px;
-
-}
-
-.list-nav-main li li a {
-  border-top: 1px solid #eee;
-}
-
-.list-nav-main li:hover > ul > li {
-  height: 2rem;
-  overflow: visible;
-
-}
-
-// .list-nav-main > li > ul:before{
-//   /*リストに「▶︎」を付ける*/
-// .gnav > li > ul:before{/*子階層*/
-//   border: 5px solid transparent;
-//   border-top: 5px solid #fff;
-//   content: "";
-//   right: 1rem;
-//   position: absolute;
-//   top: 1rem;
-//   transform: translateY(-40%);
-// }
-// }
-// .list-nav-main li ul li ul:before {/*孫階層*/
-//   border: 5px solid transparent;
-//   border-left: 5px solid #fff;
-//   content: "";
-//   left: -20px;
-//   position: absolute;
-//   top: 1em;
-//   transform: translateY(-50%);
-// }
-// .list-nav-main li:nth-child(5) ul li ul:before {/*一番右のメニューの孫階層*/
-//   border: 5px solid transparent;
-//   border-top: 5px solid #fff;
-//   content: "";
-//   right: 1rem;
-//   position: absolute;
-//   top: 1rem;
-//   transform: translateY(-40%);
-// }
-
-// .list-nav-main.list-nav-main li ul li ul:before {
-//   border: 5px solid transparent;
-//   border-left: 5px solid #fff;
-//   content: "";
-//   left: -20px;
-//   position: absolute;
-//   top: 1em;
-//   transform: translateY(-50%);
-// }
-
-// .list-nav-main li:nth-child(5) ul li ul:before {
-//   border: 5px solid transparent;
-//   border-right: 5px solid #fff;
-//   left: auto;
-//   right: -20px;
-// }
 
 
 /*==================================================
