@@ -201,35 +201,35 @@ transform: scale(1.0);
 
 
 
-// a {
-//   text-decoration: none;
-// }
+a {
+  text-decoration: none;
+}
 
-// .contents-products {
-//   margin: 0;
-//   padding: 0;
-//   height: 200vh;
-//   // width: 1000px;
-//   padding-bottom: 60px;
-//   background: #fce5cd5d;
-//   font-family: 'Vollkorn', serif;
+.contents-products {
+  margin: 0;
+  padding: 0;
+  height: 200vh;
+  // width: 1000px;
+  padding-bottom: 60px;
+  background: #fce5cd5d;
+  font-family: 'Vollkorn', serif;
 
-// }
+}
 
-// article, aside, figure, figcaption, footer, header, section, main {
-//   display: block;
-// }
+article, aside, figure, figcaption, footer, header, section, main {
+  display: block;
+}
 
-// * {
-//   box-sizing: border-box;
-// }
+* {
+  box-sizing: border-box;
+}
 
-// .contents-products .contents-sub {
-//   float: left;
-//   width: 250px;
-//   margin-left: 30px;
-//   margin-top: -400px;
-// }
+.contents-products .contents-sub {
+  float: left;
+  width: 250px;
+  margin-left: 30px;
+  margin-top: -400px;
+}
 
 /*==================================================
 タブメニューのためのcss
