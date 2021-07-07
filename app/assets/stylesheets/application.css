@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+
+ #box{
+  height: 600px;
+}
+.image1 {
+  background-image: url(fashion39.jpg);
+}
+.image2 {
+  background-image: url(fashion40.jpg);
+}
+.image3 {
+  background-image: url(fashion41.jpg);
+}
+.image4 {
+  background-image: url(fashion42.jpg);
+}
