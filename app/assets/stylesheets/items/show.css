@@ -80,9 +80,6 @@
   font-size: 18px;
   margin: 40px 0px;
   overflow-wrap: anywhere;
-  border-bottom: 2px solid #000000;
-  border-top: 2px solid #000000;
-  padding: 30px;
 }
 
 .detail-table {
