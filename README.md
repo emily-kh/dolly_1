@@ -70,26 +70,15 @@ https://dolly-1.herokuapp.com/
 | -------------- | ---------- | ----------------- |
 | name           | string     | null: false       |
 | price          | integer    | null: false       |
-| category       | references | foreign_key: true |
+| category       | integer    | null: false       |
 
 ##### Association
 
 - has_one : purchase_user
-- belongs_to : category
 - has_one : favorite_item
 - belongs_to : purchase_history
 - belongs_to : owner
 
-#### categories テーブル
-
-| Column         | Type       | Options           |
-| -------------- | ---------- | ----------------- |
-| ca_name        | string     | null: false       |
-| item           | references | foreign_key: true |
-
-##### Association
-
-- has_many : items
 
 #### addresses テーブル
 | Column        | Type       | Options           |

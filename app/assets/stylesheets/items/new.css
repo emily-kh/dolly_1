@@ -2,7 +2,7 @@
 
 
 .items-sell-contents {
-  background-color: #f5f5f5;
+  background-color: #fce5cd5d;
   font-family: "Source Sans Pro", Helvetica, Arial, "æ¸¸ã‚´ã‚·ãƒƒã‚¯ä½“", "YuGothic", "ãƒ¡ã‚¤ãƒªã‚ª", "Meiryo", sans-serif;
   font-size: 14px;
   display: flex;
@@ -14,6 +14,7 @@
 .items-sell-header {
   padding: 5vh 0;
   text-align: center;
+  font-size: 20px;
 }
 
 .items-sell-main {
@@ -163,18 +164,6 @@
 
 /* /販売価格 */
 
-/* 注意書き */
-.caution {
-  padding: 5vh 0;
-}
-
-.sentence>a {
-  color: #0099e8;
-  text-decoration: none;
-}
-
-/* /注意書き */
-
 /* 下部ボタン */
 .sell-btn-contents {
   width: 100%;
@@ -202,7 +191,6 @@
 /* /下部ボタン */
 
 .items-sell-footer {
-  background-color: #f5f5f5;
   width: 60vw;
   padding: 3ch 0;
   display: flex;
@@ -222,8 +210,4 @@
   color: black;
   font-size: 12px;
   margin: 2vw;
-}
-
-.inc {
-  font-size: 13px;
 }

@@ -9,195 +9,15 @@
   align-items: center;
 }
 
-.top_img {
-  height: auto;
-  width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  position: relative;
-  overflow: hidden;
-}
-.top_img img.img_base {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-}
-.top_img img.img01,
-.top_img img.img02,
-.top_img img.img04,
-.top_img img.img03 {
-  animation-name: album;
-  -webkit-animation-name: album;
-  animation-duration: 15s;
-  -webkit-animation-duration: 15s;
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
-  opacity: 0;
-  display: block;
-  width: 100%;
-  min-width: 760px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.top_img img.img02 {
-  animation-delay:5s;
-  -webkit-animation-delay:5s;
-}
-.top_img img.img03 {
-  animation-delay:10s;
-  -webkit-animation-delay: 10s;
-}
-
-.top_img img.img04{
- animation-delay: 15s;
- -webkit-animation-delay:15s ;
-}
-
-@keyframes album {
-  0% {
-    opacity: 0;
--webkit-filter: blur(20px);
--moz-filter: blur(20px);
--ms-filter: blur(20px);
-filter: blur(20px);
--webkit-transform: scale(1.2);
--moz-transform: scale(1.2);
--o-transform: scale(1.2);
--ms-transform: scale(1.2);
-transform: scale(1.2);
-  }
-  10% {
-    opacity: 1;
--webkit-filter: blur(0px);
--moz-filter: blur(0px);
--ms-filter: blur(0px);
-filter: blur(0px);
-  }
-  34% {
-    opacity: 1;
--webkit-transform: scale(1.0);
--moz-transform: scale(1.0);
--o-transform: scale(1.0);
--ms-transform: scale(1.0);
-transform: scale(1.0);
-  }
-  44% {
-    opacity: 0;
-  }
-}
-@-webkit-keyframes album {
-  0% {
-    opacity: 0;
--webkit-filter: blur(20px);
--moz-filter: blur(20px);
--ms-filter: blur(20px);
-filter: blur(20px);
--webkit-transform: scale(1.2);
--moz-transform: scale(1.2);
--o-transform: scale(1.2);
--ms-transform: scale(1.2);
-transform: scale(1.2);
-  }
-  10% {
-    opacity: 1;
--webkit-filter: blur(0px);
--moz-filter: blur(0px);
--ms-filter: blur(0px);
-filter: blur(0px);
-  }
-  34% {
-    opacity: 1;
--webkit-transform: scale(1.0);
--moz-transform: scale(1.0);
--o-transform: scale(1.0);
--ms-transform: scale(1.0);
-transform: scale(1.0);
-  }
-  44% {
-    opacity: 0;
-  }
-}
 /*==================================================
-
-
 スライダーのためのcss
 ===================================*/
 
-// .slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
-//   width:94%;
-//   margin:0 auto;
-// }
-
-// .img {
-//    width:100%;/*スライダー内の画像を横幅100%に*/
-//    height:auto;
-//    display: flex;
-// }
-
-// /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
-
-// .slider .slick-slide {
-//    margin:0 10px;
-// }
-
-// /*矢印の設定*/
-
-// /*戻る、次へ矢印の位置*/
-// .slick-prev, 
-// .slick-next {
-//    position: absolute;/*絶対配置にする*/
-//    top: 42%;
-//    cursor: pointer;/*マウスカーソルを指マークに*/
-//    outline: none;/*クリックをしたら出てくる枠線を消す*/
-//    border-top: 2px solid #666;/*矢印の色*/
-//    border-right: 2px solid #666;/*矢印の色*/
-//    height: 15px;
-//    width: 15px;
-// }
-
-// .slick-prev {/*戻る矢印の位置と形状*/
-//    left: -1.5%;
-//    transform: rotate(-135deg);
-// }
-
-// .slick-next {/*次へ矢印の位置と形状*/
-//    right: -1.5%;
-//    transform: rotate(45deg);
-// }
-
-// /*ドットナビゲーションの設定*/
-
-// .slick-dots {
-//    text-align:center;
-//  margin:20px 0 0 0;
-// }
-
-// .slick-dots li {
-//    display:inline-block;
-//  margin:0 5px;
-// }
-
-// .slick-dots button {
-//    color: transparent;
-//    outline: none;
-//    width:8px;/*ドットボタンのサイズ*/
-//    height:8px;/*ドットボタンのサイズ*/
-//    display:block;
-//    border-radius:50%;
-//    background:#ccc;/*ドットボタンの色*/
-// }
-
-// .slick-dots .slick-active button{
-//    background:#333;/*ドットボタンの現在地表示の色*/
-// }
 
 
-// /*==================================================
-// スライダーのためのcss
-// ===================================*/
+/*==================================================
+スライダーのためのcss
+===================================*/
 
 
 
@@ -220,86 +40,39 @@ article, aside, figure, figcaption, footer, header, section, main {
   display: block;
 }
 
-* {
-  box-sizing: border-box;
-}
-
+// 
 .contents-products .contents-sub {
   float: left;
-  width: 250px;
-  margin-left: 30px;
-  margin-top: -400px;
+  width: 270px;
+  margin-left: 25px;
+  margin-top: -250px;
 }
-
-/*==================================================
-タブメニューのためのcss
-===================================*/
-.nav-local .ttl-nav {
-  padding: 13px 0px;
-  border-top: 1px solid transparent;
-  border-bottom: 1px solid #A2A2A2;
-  font-size: 1rem;
-  font-weight: bold;
-  line-height: 1.4;
-  margin-top: 80px;
-  margin-left: 60px;
-  color: #f7c49e;
-}
-
-p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-}
-
-.list-nav-main {
-  color: #fff;
-  cursor: pointer;
-  display: block;
-  margin-bottom: 1px;
-}
-.menu__item__link {
-  color: black;
-  display: block;
-  line-height: 30px;
-  padding: 10px;
-  position: relative;
-}
-.menu__item__link:after {
-  content: '\f067';
-  display: block;
-  font-family: "Font Awesome 5 Free";
-  line-height: 30px;
-  position: absolute;
-  right: 0;
-  text-align: center;
-  top: 0;
-  width: 60px;
-}
-.menu__item__link.on:after {
-  content: '\f068';
-}
- 
-.submenu {
-  display: none;
-}
-.submenu__item {
-  border-bottom: 1px solid black;
-  color: #222;
-  padding: 20px;
-}
-
-
-
-/*==================================================
-タブメニューのためのcss
-===================================*/
+// 商品一覧
 .sec-cmn-02 {
   margin-bottom: 30px;
   margin-right: 240px;
   margin-left: 280px;
+  position: relative;
+  width: 65%;
+}
+.ta-center .mt-20{
+  position: absolute;
+}
+
+.btn-cmn-01{
+  margin: 360px;
+  border: 1px solid #f7c49e;
+  background-color: #f7c49e;
+  border-radius: 7px;
+  padding: 10px;
+  color: #fff;
+  box-shadow: 0 5px #fce5cd93;
+}
+
+.btn-cmn-01:active{
+  position: relative;
+  top: 5px;
+  box-shadow: none;
 }
 
 .ttl-cmn-02 {
@@ -319,6 +92,53 @@ p {
   flex-wrap: wrap;
   margin: -34px -10px 0;
 }
+//
+.list-products-01>.list {
+  width: 25vh;
+  padding: 1vw;
+  background-color: #fce5cd00;
+}
+
+
+.item-img-content {
+  position: relative;
+}
+
+.item-img {
+  width: 21vh;
+  height: 25vh;
+}
+
+.item-info {
+  background-color: #FFF;
+  color: black;
+  padding: 1vw;
+}
+
+.item-name {
+  font-size: 2.5vh;
+}
+
+.item-price {
+  font-size: 1.5vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.heart-btn {
+  display: flex;
+  align-items: center;
+}
+
+.heart-icon {
+  height: 2vh;
+  width: 2vh;
+  margin-right: 0.2vw;
+}
+
+
+//
 
 ul {
   list-style: none;

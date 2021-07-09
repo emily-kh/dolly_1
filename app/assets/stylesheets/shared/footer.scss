@@ -1,5 +1,6 @@
 .footer {
   width: 100vw;
+  height: 37vh;
   padding: 4vh 0;
   color: #FFF;
   background-color: rgb(243, 205, 175);
@@ -9,11 +10,10 @@
 .footer-contents {
   display: flex;
   justify-content: center;
-  margin-bottom: 5vh;
 }
 
 .furima-details {
-  margin: 0 4vw;
+  margin: 0 5vw;
 }
 
 .footer-content-head {
@@ -25,11 +25,11 @@
 .footer-link {
   color: #FFF;
   font-size: 12px;
-  line-height: 30px;
+  line-height: 20px;
 }
 
 .logo-white {
-  width: 20vh;
+  width: 20vw;
   vertical-align: bottom;
 }
 
