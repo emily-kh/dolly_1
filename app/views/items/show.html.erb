@@ -12,7 +12,7 @@
       </h2>
       <div class="item-price-box">
         <span class="item-price">
-          <%= @item.price %>
+          <span>¥<%= @item.price %>(税込)</span>
         </span>
       </div>
 
@@ -42,34 +42,29 @@
           </tr>
         </tbody>
       </table>
-      <div class="option">
-        <div class="favorite-btn">
-          <%= image_tag "star.png" ,class:"favorite-star-icon" ,width:"20",height:"20"%>
-          <span>お気に入り 0</span>
-        </div>
+      
+      <div class="choose-btn">
+        <% if user_signed_in? %>
+          <%= link_to "商品の編集", "#", method: :get, class: "item-red-btn" %>
+          <p class="or-text">or</p>
+          <%= link_to "削除", "#", method: :delete, class:"item-destroy" %>
+        <% else %>
+          <%= link_to "購入画面に進む", "#" ,class:"item-red-btn"%>
+        <% end %>
       </div>
-      <% if user_signed_in? %>
-      <%# <% if current_user.id == @item.user.id %> 
-        <%= link_to "商品の編集", "#", method: :get, class: "item-red-btn" %>
-        <p class="or-text">or</p>
-        <%= link_to "削除", "#", method: :delete, class:"item-destroy" %>
-      <% else %>
-        <%= link_to "購入画面に進む", "#" ,class:"item-red-btn"%>
-      <% end %>
-      <%# <% end %> 
     </div>
   </div>
   
 
   <div class="item-box2">
-    <%# <div class="links">
+    <div class="links">
       <a href="#" class="change-item-btn">
         ＜ 前の商品
       </a>
       <a href="#" class="change-item-btn">
         後ろの商品 ＞
       </a>
-    </div> %>
+    </div>
     <%# 詳細ページで表示されている商品のカテゴリー名を表示しましょう %>
     <a href="#" class="another-item"><%= "商品のカテゴリー名" %>をもっと見る</a>
     <%# //詳細ページで表示されている商品のカテゴリー名を表示しましょう %>
