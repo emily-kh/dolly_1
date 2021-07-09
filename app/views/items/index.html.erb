@@ -8,161 +8,9 @@
   </ul>
 </div> 
 
-
-
-
 <div class="contents-products">
   <div class="contents-sub">
-    <nav class="nav-local">
-      <div class="nav-local-in">
-        <p class="ttl-nav only-pc">商品タイプから探す</p>
-        <ul class="menu">
-          <li class="menu__item">
-              <a class="menu__item__link js-menu__item__link" href="">新着アイテム</a>
-              <ul class="submenu">
-                  <li class="submenu__item">
-                      <a href="">すべて</a>
-                  </li>
-                  <li class="submenu__item">
-                      <a href="">6月25日新着アイテム</a>
-                  </li>
-                  <li class="submenu__item">
-                      <a href="">6月18日新着アイテム</a>
-                  </li>
-              </ul>
-          </li>
-          <li class="menu__item">
-              <a class="menu__item__link js-menu__item__link" href="">ランキング</a>
-              <ul class="submenu">
-                  <li class="submenu__item">
-                      <a href="">すべて</a>
-                  </li>
-                  <li class="submenu__item">
-                      <a href="">トップス</a>
-                  </li>
-                  <li class="submenu__item">
-                      <a href="">アウター</a>
-                  </li>
-              </ul>
-          </li>
-        </ul>
-        <p class="ttl-nav only-pc">カテゴリーから探す</p>
-        <ul class="menu">
-          <li class="menu__item">
-              <a class="menu__item__link js-menu__item__link" href="">トップス</a>
-              <ul class="submenu">
-                  <li class="submenu__item">
-                      <a href="">すべて</a>
-                  </li>
-                  <li class="submenu__item">
-                      <a href="">シャツ</a>
-                  </li>
-                  <li class="submenu__item">
-                      <a href="">ブラウス</a>
-                  </li>
-              </ul>
-          </li>
-          <li class="menu__item">
-              <a class="menu__item__link js-menu__item__link" href="">アウター</a>
-              <ul class="submenu">
-                  <li class="submenu__item">
-                      <a href="">すべて</a>
-                  </li>
-                  <li class="submenu__item">
-                      <a href="">１</a>
-                  </li>
-                  <li class="submenu__item">
-                      <a href="">２</a>
-                  </li>
-              </ul>
-          </li>
-          <li class="menu__item">
-              <a class="menu__item__link js-menu__item__link" href="">ワンピース</a>
-              <ul class="submenu">
-                  <li class="submenu__item">
-                      <a href="">すべて</a>
-                  </li>
-                  <li class="submenu__item">
-                      <a href="">１</a>
-                  </li>
-                  <li class="submenu__item">
-                      <a href="">２</a>
-                  </li>
-              </ul>
-          </li>
-          <li class="menu__item">
-              <a class="menu__item__link js-menu__item__link" href="">ボトムス</a>
-              <ul class="submenu">
-                  <li class="submenu__item">
-                      <a href="">すべて</a>
-                  </li>
-                  <li class="submenu__item">
-                      <a href="">シャツ</a>
-                  </li>
-                  <li class="submenu__item">
-                      <a href="">ブラウス</a>
-                  </li>
-              </ul>
-          </li>
-          <li class="menu__item">
-              <a class="menu__item__link js-menu__item__link" href="">シューズ</a>
-              <ul class="submenu">
-                  <li class="submenu__item">
-                      <a href="">すべて</a>
-                  </li>
-                  <li class="submenu__item">
-                      <a href="">１</a>
-                  </li>
-                  <li class="submenu__item">
-                      <a href="">２</a>
-                  </li>
-              </ul>
-          </li>
-          <li class="menu__item">
-              <a class="menu__item__link js-menu__item__link" href="">バッグ</a>
-              <ul class="submenu">
-                  <li class="submenu__item">
-                      <a href="">すべて</a>
-                  </li>
-                  <li class="submenu__item">
-                      <a href="">１</a>
-                  </li>
-                  <li class="submenu__item">
-                      <a href="">２</a>
-                  </li>
-              </ul>
-          </li>
-          <li class="menu__item">
-              <a class="menu__item__link js-menu__item__link" href="">アクセサリー</a>
-              <ul class="submenu">
-                  <li class="submenu__item">
-                      <a href="">すべて</a>
-                  </li>
-                  <li class="submenu__item">
-                      <a href="">１</a>
-                  </li>
-                  <li class="submenu__item">
-                      <a href="">２</a>
-                  </li>
-              </ul>
-          </li>
-          <li class="menu__item">
-              <a class="menu__item__link js-menu__item__link" href="">セットアイテム</a>
-              <ul class="submenu">
-                  <li class="submenu__item">
-                      <a href="">すべて</a>
-                  </li>
-                  <li class="submenu__item">
-                      <a href="">１</a>
-                  </li>
-                  <li class="submenu__item">
-                      <a href="">２</a>
-                  </li>
-              </ul>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <%= render "shared/second-header"%>
   </div>
   <div class="sec-cmn-02">
     <h2 class="ttl-cmn-02">
@@ -180,7 +28,7 @@
             <%= item.name %>
           </h3>
           <div class='item-price'>
-            <span><%= item.price %>円</span>
+            <span>￥<%= item.price %></span>
             <div class='heart-btn'>
               <%= image_tag "mark_heart.png", class:"heart-icon" %>
             </div>
@@ -209,7 +57,7 @@
               <%= image_tag "fashion11.jpg"%>
             </figure>
             <p class="txt-name">fashion11</p>
-            <p class="txt-price">11000</p>
+            <p class="txt-price">￥11000</p>
           </a>
         </div>
       </li>
@@ -221,7 +69,7 @@
               <%= image_tag "fashion12.jpg"%>
             </figure>
             <p class="txt-name">fashion12</p>
-            <p class="txt-price">12000</p>
+            <p class="txt-price">￥12000</p>
           </a>
         </div>
       </li>
@@ -233,7 +81,7 @@
               <%= image_tag "fashion13.jpg"%>
             </figure>
             <p class="txt-name">fashion13</p>
-            <p class="txt-price">13000</p>
+            <p class="txt-price">￥13000</p>
           </a>
         </div>
       </li>
@@ -245,7 +93,7 @@
               <%= image_tag "fashion14.jpg"%>
             </figure>
             <p class="txt-name">fashion14</p>
-            <p class="txt-price">14000</p>
+            <p class="txt-price">￥14000</p>
           </a>
         </div>
       </li>
@@ -257,7 +105,7 @@
               <%= image_tag "fashion15.jpg"%>
             </figure>
             <p class="txt-name">fashion15</p>
-            <p class="txt-price">15000</p>
+            <p class="txt-price">￥15000</p>
           </a>
         </div>
       </li>
@@ -269,7 +117,7 @@
               <%= image_tag "fashion16.jpg"%>
             </figure>
             <p class="txt-name">fashion16</p>
-            <p class="txt-price">16000</p>
+            <p class="txt-price">￥16000</p>
           </a>
         </div>
       </li>
@@ -281,7 +129,7 @@
               <%= image_tag "fashion17.jpg"%>
             </figure>
             <p class="txt-name">fashion17</p>
-            <p class="txt-price">17000</p>
+            <p class="txt-price">￥17000</p>
           </a>
         </div>
       </li>
@@ -293,7 +141,7 @@
               <%= image_tag "fashion18.jpg"%>
             </figure>
             <p class="txt-name">fashion18</p>
-            <p class="txt-price">18000</p>
+            <p class="txt-price">￥18000</p>
           </a>
         </div>
       </li>
@@ -305,7 +153,7 @@
               <%= image_tag "fashion19.jpg"%>
             </figure>
             <p class="txt-name">fashion19</p>
-            <p class="txt-price">19000</p>
+            <p class="txt-price">￥19000</p>
           </a>
         </div>
       </li>
@@ -317,7 +165,7 @@
               <%= image_tag "fashion20.jpg"%>
             </figure>
             <p class="txt-name">fashion20</p>
-            <p class="txt-price">20000</p>
+            <p class="txt-price">￥20000</p>
           </a>
         </div>
       </li>
