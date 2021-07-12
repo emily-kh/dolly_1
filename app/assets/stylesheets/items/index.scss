@@ -1,18 +1,28 @@
 .main {
   background: #fce5cd5d;
   font-family: 'Vollkorn', serif;
-  margin-top: 40px;
-  padding: 0;
-  height: 85vh;
-  display: flex;
+  margin-top: 100px;
   justify-content: center;
   align-items: center;
+  display: flex;
 }
 
 /*==================================================
 スライダーのためのcss
 ===================================*/
+.slider {
+  width: 750px;
+  height: 500px;
+  margin-left: 100px;
+  display: flex;
+  overflow: hidden;
+}
 
+.slider li {
+   width:500%;
+   height: 500px;
+   display: flex;
+}
 
 
 /*==================================================
@@ -29,7 +39,6 @@ a {
   margin: 0;
   padding: 0;
   height: 200vh;
-  // width: 1000px;
   padding-bottom: 60px;
   background: #fce5cd5d;
   font-family: 'Vollkorn', serif;
@@ -44,29 +53,31 @@ article, aside, figure, figcaption, footer, header, section, main {
 .contents-products .contents-sub {
   float: left;
   width: 270px;
-  margin-left: 25px;
-  margin-top: -250px;
+  margin-left: 20px;
+  margin-top: -200px;
 }
 // 商品一覧
 .sec-cmn-02 {
   margin-bottom: 30px;
-  margin-right: 240px;
+  margin-right: 250px;
   margin-left: 280px;
   position: relative;
   width: 65%;
 }
 .ta-center .mt-20{
   position: absolute;
+  
 }
 
 .btn-cmn-01{
-  margin: 360px;
   border: 1px solid #f7c49e;
   background-color: #f7c49e;
-  border-radius: 7px;
-  padding: 10px;
+  border-radius: 5px;
+  padding: 7px;
+  font-size: 11px;
   color: #fff;
   box-shadow: 0 5px #fce5cd93;
+  margin-left: 340px;
 }
 
 .btn-cmn-01:active{
@@ -110,7 +121,6 @@ article, aside, figure, figcaption, footer, header, section, main {
 }
 
 .item-info {
-  background-color: #FFF;
   color: black;
   padding: 1vw;
 }

@@ -1,179 +1,180 @@
 <%= render "shared/header" %>
-<div class='main'>
-  <ul class="slider">
-    <li><%= image_tag "fashion39.jpg" %></li>
-    <li><%= image_tag "fashion40.jpg" %></li>
-    <li><%= image_tag "fashion41.jpg" %></li>
-    <li><%= image_tag "fashion42.jpg" %></li>
-  </ul>
-</div> 
+<div>
+  <div class='main'>
+    <ul class="slider">
+      <li><%= image_tag "fashion39.jpg" %></li>
+      <li><%= image_tag "fashion40.jpg" %></li>
+      <li><%= image_tag "fashion41.jpg" %></li>
+      <li><%= image_tag "fashion42.jpg" %></li>
+    </ul>
+  </div> 
 
-<div class="contents-products">
-  <div class="contents-sub">
-    <%= render "shared/second-header"%>
-  </div>
-  <div class="sec-cmn-02">
-    <h2 class="ttl-cmn-02">
-      <span class="txt-en">NEW ITEM</span>
-    <h2>
-    <ul class="list-products-01">
-      <% @items.each do |item| %> 
-      <li class='list'>
-        <%= link_to item_path(item.id) do %> 
-        <div class='item-img-content'>
-          <%= image_tag item.image, class: "item-img" %>
-        </div>
-        <div class='item-info'>
-          <h3 class='item-name'>
-            <%= item.name %>
-          </h3>
-          <div class='item-price'>
-            <span>￥<%= item.price %></span>
-            <div class='heart-btn'>
-              <%= image_tag "mark_heart.png", class:"heart-icon" %>
+  <div class="contents-products">
+    <div class="contents-sub">
+      <%= render "shared/second-header"%>
+    </div>
+    <div class="sec-cmn-02">
+      <h2 class="ttl-cmn-02">
+        <span class="txt-en">NEW ITEM</span>
+      <h2>
+      <ul class="list-products-01">
+        <% @items.each do |item| %> 
+        <li class='list'>
+          <%= link_to item_path(item.id) do %> 
+          <div class='item-img-content'>
+            <%= image_tag item.image, class: "item-img" %>
+          </div>
+          <div class='item-info'>
+            <h3 class='item-name'>
+              <%= item.name %>
+            </h3>
+            <div class='item-price'>
+              <span>￥<%= item.price %></span>
+              <div class='heart-btn'>
+                <%= image_tag "mark_heart.png", class:"heart-icon" %>
+              </div>
             </div>
           </div>
-        </div>
-        <% end %>
-      </li>  
-      <% end %> 
-    </ul>
-    <div class="ta-center mt-20">
-      <a class="btn-cmn-01" href="#">新着アイテム一覧を見る</a>
+          <% end %>
+        </li>  
+        <% end %> 
+      </ul>
+      <div class="ta-center mt-20">
+        <a class="btn-cmn-01" href="#">新着アイテム一覧を見る</a>
+      </div>
+      
     </div>
-    
-  </div>
 
-  <div class="sec-cmn-02">
-    <h2 class="ttl-cmn-02 mb-5">
-      <span class="txt-en">RANKING</span>
-    <h2>
-    <ul class="list-products-01">
-      <li>
-        <div class="card-product-01">
-          <p class="txt-ranking">No.1</p>
-          <a class="box-link" href="" >
-            <figure class="box-image">
-              <%= image_tag "fashion11.jpg"%>
-            </figure>
-            <p class="txt-name">fashion11</p>
-            <p class="txt-price">￥11000</p>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div class="card-product-01">
-          <p class="txt-ranking">No.2</p>
-          <a class="box-link" href="" >
-            <figure class="box-image">
-              <%= image_tag "fashion12.jpg"%>
-            </figure>
-            <p class="txt-name">fashion12</p>
-            <p class="txt-price">￥12000</p>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div class="card-product-01">
-          <p class="txt-ranking">No.3</p>
-          <a class="box-link" href="" >
-            <figure class="box-image">
-              <%= image_tag "fashion13.jpg"%>
-            </figure>
-            <p class="txt-name">fashion13</p>
-            <p class="txt-price">￥13000</p>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div class="card-product-01">
-          <p class="txt-ranking">No.4</p>
-          <a class="box-link" href="" >
-            <figure class="box-image">
-              <%= image_tag "fashion14.jpg"%>
-            </figure>
-            <p class="txt-name">fashion14</p>
-            <p class="txt-price">￥14000</p>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div class="card-product-01">
-          <p class="txt-ranking">No.5</p>
-          <a class="box-link" href="" >
-            <figure class="box-image">
-              <%= image_tag "fashion15.jpg"%>
-            </figure>
-            <p class="txt-name">fashion15</p>
-            <p class="txt-price">￥15000</p>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div class="card-product-01">
-          <p class="txt-ranking">No.6</p>
-          <a class="box-link" href="" >
-            <figure class="box-image">
-              <%= image_tag "fashion16.jpg"%>
-            </figure>
-            <p class="txt-name">fashion16</p>
-            <p class="txt-price">￥16000</p>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div class="card-product-01">
-          <p class="txt-ranking">No.7</p>
-          <a class="box-link" href="" >
-            <figure class="box-image">
-              <%= image_tag "fashion17.jpg"%>
-            </figure>
-            <p class="txt-name">fashion17</p>
-            <p class="txt-price">￥17000</p>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div class="card-product-01">
-          <p class="txt-ranking">No.8</p>
-          <a class="box-link" href="" >
-            <figure class="box-image">
-              <%= image_tag "fashion18.jpg"%>
-            </figure>
-            <p class="txt-name">fashion18</p>
-            <p class="txt-price">￥18000</p>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div class="card-product-01">
-          <p class="txt-ranking">No.9</p>
-          <a class="box-link" href="" >
-            <figure class="box-image">
-              <%= image_tag "fashion19.jpg"%>
-            </figure>
-            <p class="txt-name">fashion19</p>
-            <p class="txt-price">￥19000</p>
-          </a>
-        </div>
-      </li>
-      <li>
-        <div class="card-product-01">
-          <p class="txt-ranking">No.10</p>
-          <a class="box-link" href="" >
-            <figure class="box-image">
-              <%= image_tag "fashion20.jpg"%>
-            </figure>
-            <p class="txt-name">fashion20</p>
-            <p class="txt-price">￥20000</p>
-          </a>
-        </div>
-      </li>
-    </ul>
-    <div class="ta-center mt-20">
-      <a class="btn-cmn-01" href="#">ランキング一覧を見る</a>
+    <div class="sec-cmn-02">
+      <h2 class="ttl-cmn-02 mb-5">
+        <span class="txt-en">RANKING</span>
+      <h2>
+      <ul class="list-products-01">
+        <li>
+          <div class="card-product-01">
+            <p class="txt-ranking">No.1</p>
+            <a class="box-link" href="" >
+              <figure class="box-image">
+                <%= image_tag "fashion11.jpg"%>
+              </figure>
+              <p class="txt-name">fashion11</p>
+              <p class="txt-price">￥11000</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="card-product-01">
+            <p class="txt-ranking">No.2</p>
+            <a class="box-link" href="" >
+              <figure class="box-image">
+                <%= image_tag "fashion12.jpg"%>
+              </figure>
+              <p class="txt-name">fashion12</p>
+              <p class="txt-price">￥12000</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="card-product-01">
+            <p class="txt-ranking">No.3</p>
+            <a class="box-link" href="" >
+              <figure class="box-image">
+                <%= image_tag "fashion13.jpg"%>
+              </figure>
+              <p class="txt-name">fashion13</p>
+              <p class="txt-price">￥13000</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="card-product-01">
+            <p class="txt-ranking">No.4</p>
+            <a class="box-link" href="" >
+              <figure class="box-image">
+                <%= image_tag "fashion14.jpg"%>
+              </figure>
+              <p class="txt-name">fashion14</p>
+              <p class="txt-price">￥14000</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="card-product-01">
+            <p class="txt-ranking">No.5</p>
+            <a class="box-link" href="" >
+              <figure class="box-image">
+                <%= image_tag "fashion15.jpg"%>
+              </figure>
+              <p class="txt-name">fashion15</p>
+              <p class="txt-price">￥15000</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="card-product-01">
+            <p class="txt-ranking">No.6</p>
+            <a class="box-link" href="" >
+              <figure class="box-image">
+                <%= image_tag "fashion16.jpg"%>
+              </figure>
+              <p class="txt-name">fashion16</p>
+              <p class="txt-price">￥16000</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="card-product-01">
+            <p class="txt-ranking">No.7</p>
+            <a class="box-link" href="" >
+              <figure class="box-image">
+                <%= image_tag "fashion17.jpg"%>
+              </figure>
+              <p class="txt-name">fashion17</p>
+              <p class="txt-price">￥17000</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="card-product-01">
+            <p class="txt-ranking">No.8</p>
+            <a class="box-link" href="" >
+              <figure class="box-image">
+                <%= image_tag "fashion18.jpg"%>
+              </figure>
+              <p class="txt-name">fashion18</p>
+              <p class="txt-price">￥18000</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="card-product-01">
+            <p class="txt-ranking">No.9</p>
+            <a class="box-link" href="" >
+              <figure class="box-image">
+                <%= image_tag "fashion19.jpg"%>
+              </figure>
+              <p class="txt-name">fashion19</p>
+              <p class="txt-price">￥19000</p>
+            </a>
+          </div>
+        </li>
+        <li>
+          <div class="card-product-01">
+            <p class="txt-ranking">No.10</p>
+            <a class="box-link" href="" >
+              <figure class="box-image">
+                <%= image_tag "fashion20.jpg"%>
+              </figure>
+              <p class="txt-name">fashion20</p>
+              <p class="txt-price">￥20000</p>
+            </a>
+          </div>
+        </li>
+      </ul>
+      <div class="ta-center mt-20">
+        <a class="btn-cmn-01" href="#">ランキング一覧を見る</a>
+      </div>
     </div>
   </div>
 </div>
-
 <%= render "shared/footer" %>
