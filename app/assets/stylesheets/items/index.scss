@@ -101,13 +101,14 @@ article, aside, figure, figcaption, footer, header, section, main {
 .list-products-01 {
   display: flex;
   flex-wrap: wrap;
-  margin: -34px -10px 0;
+  margin: -30px -15px 1px 0px;
 }
 //
 .list-products-01>.list {
   width: 25vh;
   padding: 1vw;
   background-color: #fce5cd00;
+  margin-right: 50px;
 }
 
 
