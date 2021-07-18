@@ -8,7 +8,9 @@
         <li><%= link_to 'DOLLY利用規約', "#", class: "footer-link" %></li>
         <li><%= link_to 'ポイントに関する特約', "#", class: "footer-link" %></li>
         <li><%= link_to 'お知らせ', "#", class: "footer-link" %></li>
-        <li><%= link_to 'owner', owners_path, class: "footer-link" %></li>
+        <% if user_signed_in? %>
+          <li><%= link_to 'owner', owners_path, class: "footer-link" %></li>
+        <% end %>
       </ul>
     </div>
     <div class='furima-details'>
