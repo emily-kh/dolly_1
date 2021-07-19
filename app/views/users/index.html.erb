@@ -3,7 +3,7 @@
 <main class="contents-normal">
   <div class="contents-mypage">
     <div class="contents-sub">
-      <nav class="nav-local nav-local-mypage">
+      <nav class="nav-local">
         <div class="nav-local-in">
           <p class="ttl-nav only-pc">マイページメニュー</p>
           <ul>
@@ -14,6 +14,11 @@
             <li>退会</li>
           </ul>
           <a><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></a>
+        </div>
+        <div class="office-info">
+          <ul>
+            <li>お知らせ</li>
+          </ul>
         </div>
       </nav>
     </div>
